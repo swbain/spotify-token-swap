@@ -3,7 +3,7 @@ var express = require('express'),
     bodyParser = require('body-parser'),
     request = require('request');
 
-app.listen(3000);
+app.listen(process.env.PORT || 80);
 app.use(bodyParser.json());
 
 var client_id = '39d7c757ebcf41ad8f3dad74cb8def34';
