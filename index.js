@@ -6,8 +6,8 @@ var express = require('express'),
 app.listen(process.env.PORT || 80);
 app.use(bodyParser.json());
 
-var client_id = process.env.CLIENT_ID;
-var client_secret = process.env.CLIENT_SECRET;
+var client_id = process.env['CLIENT_ID'];
+var client_secret = process.env['CLIENT_SECRET'];
 var redirect_uri = "spotifydiscog://callback"
 
 app.get('/get_token', function(req, res) {
