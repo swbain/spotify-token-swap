@@ -67,3 +67,7 @@ app.get('/refresh', function(req, res) {
       }
     })
 });
+
+app.get('/', function(req, res) {
+  res.send('oh hey sup');
+})
