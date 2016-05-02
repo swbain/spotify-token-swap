@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 
 var client_id = process.env.CLIENT_ID
 var client_secret = process.env.CLIENT_SECRET;
-var redirect_uri = "spotifydiscog://callback"
+var redirect_uri = process.env.REDIRECT_URI
 
 app.get('/get_token', function(req, res) {
   var code = req.query.code;
